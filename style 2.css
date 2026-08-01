@@ -1,0 +1,634 @@
+/* ===========================
+   Google Font Styles
+=========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:linear-gradient(-45deg,#6C63FF,#A855F7,#EC4899,#F472B6);
+background-size:400% 400%;
+animation:bgMove 12s ease infinite;
+
+color:white;
+
+overflow-x:hidden;
+
+min-height:100vh;
+
+}
+
+
+/* ===========================
+   Animated Background
+=========================== */
+
+@keyframes bgMove{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+
+/* ===========================
+   Floating Hearts
+=========================== */
+
+#hearts{
+
+position:fixed;
+
+left:0;
+
+top:0;
+
+width:100%;
+
+height:100%;
+
+pointer-events:none;
+
+z-index:-1;
+
+}
+
+.heart{
+
+position:fixed;
+
+top:-30px;
+
+font-size:22px;
+
+animation:fall linear forwards;
+
+opacity:.9;
+
+}
+
+@keyframes fall{
+
+to{
+
+transform:translateY(110vh) rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+.hero h1{
+
+font-family:'Great Vibes',cursive;
+
+font-size:82px;
+
+text-shadow:0 0 20px rgba(255,255,255,.6);
+
+margin-bottom:10px;
+
+animation:fadeDown 1.5s;
+
+}
+
+.subtitle{
+
+font-size:28px;
+
+font-weight:600;
+
+margin-bottom:10px;
+
+}
+
+.story{
+
+max-width:700px;
+
+font-size:19px;
+
+line-height:1.8;
+
+opacity:.95;
+
+margin-bottom:35px;
+
+}
+
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+button{
+
+padding:15px 40px;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+font-size:18px;
+
+font-weight:bold;
+
+background:white;
+
+color:#7C3AED;
+
+transition:.35s;
+
+box-shadow:0 8px 30px rgba(255,255,255,.35);
+
+}
+
+button:hover{
+
+transform:translateY(-4px) scale(1.05);
+
+box-shadow:0 15px 40px rgba(255,255,255,.5);
+
+}
+
+
+/* ===========================
+   MAIN CONTENT
+=========================== */
+
+.hidden{
+
+display:none;
+
+}
+
+#mainContent{
+
+padding:60px 20px;
+
+}
+
+
+/* ===========================
+   Glass Card
+=========================== */
+
+.glass{
+
+max-width:900px;
+
+margin:0 auto 50px;
+
+padding:40px;
+
+background:rgba(255,255,255,.14);
+
+border:1px solid rgba(255,255,255,.25);
+
+backdrop-filter:blur(18px);
+
+border-radius:28px;
+
+box-shadow:0 12px 35px rgba(0,0,0,.25);
+
+animation:fadeUp 1.2s;
+
+}
+
+.glass h2{
+
+font-family:'Great Vibes',cursive;
+
+font-size:55px;
+
+text-align:center;
+
+margin-bottom:20px;
+
+}
+
+.glass p{
+
+font-size:18px;
+
+line-height:2;
+
+text-align:center;
+
+}
+
+
+/* ===========================
+   Gallery
+=========================== */
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+gap:20px;
+
+max-width:1000px;
+
+margin:50px auto;
+
+}
+
+.gallery img{
+
+width:100%;
+
+height:340px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+transition:.5s;
+
+box-shadow:0 12px 30px rgba(0,0,0,.3);
+
+}
+
+.gallery img:hover{
+
+transform:scale(1.05);
+
+}
+
+
+/* ===========================
+   Love Note
+=========================== */
+
+.love-note{
+
+max-width:850px;
+
+margin:50px auto;
+
+padding:35px;
+
+background:rgba(255,255,255,.14);
+
+border-radius:25px;
+
+backdrop-filter:blur(18px);
+
+box-shadow:0 12px 30px rgba(0,0,0,.25);
+
+}
+
+.love-note h2{
+
+font-family:'Great Vibes',cursive;
+
+font-size:50px;
+
+text-align:center;
+
+margin-bottom:20px;
+
+}
+
+.love-note p{
+
+text-align:center;
+
+font-size:18px;
+
+line-height:2;
+
+}
+
+.bulgarian{
+
+margin-top:25px;
+
+font-size:23px;
+
+font-weight:600;
+
+color:#FFE5F5;
+
+}
+
+.translation{
+
+margin-top:15px;
+
+font-style:italic;
+
+opacity:.85;
+
+}
+
+
+/* ===========================
+   Quiz
+=========================== */
+
+#quiz{
+
+max-width:700px;
+
+margin:60px auto;
+
+padding:35px;
+
+background:rgba(255,255,255,.14);
+
+border-radius:25px;
+
+backdrop-filter:blur(18px);
+
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+text-align:center;
+
+}
+
+#quiz h2{
+
+font-family:'Great Vibes',cursive;
+
+font-size:52px;
+
+margin-bottom:20px;
+
+}
+
+#question{
+
+font-size:22px;
+
+margin-bottom:25px;
+
+line-height:1.8;
+
+}
+
+.buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+
+/* ===========================
+   Secret Letter
+=========================== */
+
+#secret{
+
+max-width:850px;
+
+margin:60px auto;
+
+padding:35px;
+
+border-radius:25px;
+
+background:rgba(255,255,255,.15);
+
+backdrop-filter:blur(18px);
+
+text-align:center;
+
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+}
+
+#secret h2{
+
+font-family:'Great Vibes',cursive;
+
+font-size:52px;
+
+margin-bottom:20px;
+
+}
+
+#secret p{
+
+line-height:2;
+
+font-size:18px;
+
+}
+
+
+/* ===========================
+   Final Section
+=========================== */
+
+#final{
+
+max-width:850px;
+
+margin:80px auto;
+
+padding:45px;
+
+text-align:center;
+
+background:rgba(255,255,255,.15);
+
+border-radius:30px;
+
+backdrop-filter:blur(20px);
+
+box-shadow:0 12px 35px rgba(0,0,0,.25);
+
+}
+
+#final h1{
+
+font-size:60px;
+
+margin-bottom:20px;
+
+}
+
+#final h2{
+
+font-family:'Great Vibes',cursive;
+
+font-size:60px;
+
+margin-bottom:20px;
+
+}
+
+#final p{
+
+font-size:20px;
+
+line-height:2;
+
+}
+
+
+/* ===========================
+   Animations
+=========================== */
+
+@keyframes fadeDown{
+
+from{
+
+opacity:0;
+
+transform:translateY(-40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+/* ===========================
+   Scrollbar
+=========================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#EC4899;
+
+border-radius:20px;
+
+}
+
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:55px;
+
+}
+
+.subtitle{
+
+font-size:22px;
+
+}
+
+.story{
+
+font-size:17px;
+
+}
+
+.glass h2,
+.love-note h2,
+#quiz h2,
+#secret h2,
+#final h2{
+
+font-size:40px;
+
+}
+
+.gallery img{
+
+height:260px;
+
+}
+
+button{
+
+width:100%;
+
+}
+
+}
